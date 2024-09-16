@@ -4,7 +4,7 @@ export default function Video() {
   return (
     <div className="hidden mt-6 lg:block">
       <video
-        className="z-10 rounded-xl  h-full max-w-80 "
+        className="z-10 rounded-xl  h-full max-w-100 "
         loop
         autoPlay
         muted

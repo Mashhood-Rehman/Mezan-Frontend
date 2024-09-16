@@ -19,7 +19,7 @@ export default function Crousel() {
   <Swiper 
             onSlideChange={(swiper) => setactiveslide(swiper.activeIndex)}
   pagination={true} modules={[Pagination]} className="mySwiper  text-white font-sans">
-        <SwiperSlide className=' space-y-4 w-full h-[60vh] lg:h-[80vh] '>
+        <SwiperSlide className=' space-y-4   lg:h-[80vh] '>
             
             <motion.p
             
