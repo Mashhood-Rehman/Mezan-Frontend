@@ -30,22 +30,26 @@ export default function Navbar() {
                 Home
               </button>
               <AnimatePresence>
-                {homeHover && (
-                  <motion.ul
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.3 }}
-                    className="absolute left-0 mt-2 w-40 bg-white text-black rounded-md shadow-lg">
-                    <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">i- Default Home</Link></li>
-                    <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">ii- Handyman Service</Link></li>
-                    <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">iii- Hardware Store</Link></li>
-                    <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">iv- Installation</Link></li>
-                    <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">v- Maintenance</Link></li>
-                    <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">RTL-Version</Link></li>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
+  {homeHover && (
+    <motion.ul
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.3 }}
+      className="absolute left-0 mt-2 w-40 bg-white text-black rounded-xl shadow-lg"
+      style={{
+        boxShadow: '4px 4px 10px rgba(255, 255, 0, 0.5)', 
+      }}>
+      <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">i- Default Home</Link></li>
+      <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">ii- Handyman Service</Link></li>
+      <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">iii- Hardware Store</Link></li>
+      <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">iv- Installation</Link></li>
+      <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">v- Maintenance</Link></li>
+      <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">RTL-Version</Link></li>
+    </motion.ul>
+  )}
+</AnimatePresence>
+
             </li>
 
             {/* Services link */}
@@ -62,7 +66,10 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute left-0 mt-2 w-40 bg-white text-black rounded-md shadow-lg">
+                    className="absolute left-0 mt-2 w-40 bg-white text-black rounded-xl shadow-lg"
+                    style={{
+                      boxShadow: '4px 4px 10px rgba(255, 255, 0, 0.5)', 
+                    }}>
                     <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">Service 1</Link></li>
                     <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">Service 2</Link></li>
                     <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">Service 3</Link></li>
@@ -90,7 +97,10 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute left-0 mt-2 w-40 bg-white text-black rounded-md shadow-lg">
+                    className="absolute left-0 mt-2 w-40 bg-white text-black rounded-xl shadow-lg"
+                    style={{
+                      boxShadow: '4px 4px 10px rgba(255, 255, 0, 0.5)', 
+                    }}>
                     <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">Shop-Listing</Link></li>
                     <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">Shop-Single</Link></li>
                     <li><Link href="/" className="block text-sm px-4 py-1 hover:text-yellow-400">Cart</Link></li>

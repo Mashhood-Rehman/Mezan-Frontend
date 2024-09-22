@@ -104,7 +104,7 @@ const Service1 = () => {
 <div className="flex flex-col lg:flex-row justify-center items-center p-4">
   <div className='flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-2 items-center'>
     {/* Success Block and Video */}
-    <div className='flex flex-col items-center lg:flex-row space-y-2 lg:space-x-2'>
+    <div className='flex flex-col items-center  space-y-2 lg:space-x-2'>
       <div className='text-black font-bold bg-yellow-400 rounded-xl w-full lg:w-36 h-24 p-2 flex items-center justify-center'>
         <div className='text-center'>
           <span className='text-2xl font-bold'>980 +</span>
@@ -135,16 +135,16 @@ const Service1 = () => {
         />
       </div>
       <div className='flex flex-col lg:flex-row space-y-2 lg:space-x-2 items-center'>
-        <div className="w-full">
+        <div >
           <Image
             width={200}
             height={200}
-            className="w-full h-auto rounded-2xl"
+            className="w-auto h-auto rounded-2xl"
             src="/about-us-03.jpg"
             alt="Satisfied Customer"
           />
         </div>
-        <div className='text-black font-bold bg-blue-400 rounded-xl w-full lg:w-44 h-40 p-2 flex items-center justify-center'>
+        <div className='text-black font-bold bg-blue-400 rounded-xl w-full lg:w-64 h-56 p-2 flex items-center justify-center'>
           <div className='text-center'>
             <span className='text-2xl font-bold'>900 +</span>
             <p className='text-sm'>Satisfied Customers</p>

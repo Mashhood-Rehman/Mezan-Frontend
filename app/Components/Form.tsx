@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div>
 
-<div className="p-10 mt-4 rounded-2xl   lg:max-w-6xl     bg-blue-600 lg:mr-10 font-[sans-serif]">
+<div className="p-10 mt-4 rounded-2xl   lg:max-w-4xl      bg-blue-600 lg:mr-10 font-[sans-serif]">
             <h1 className="text-3xl text-white font-serif text-left flex">Contact us</h1>
             <form className="mt-8 space-y-4">
                 <input type='text' placeholder='Name'

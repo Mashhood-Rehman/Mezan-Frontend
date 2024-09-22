@@ -5,6 +5,10 @@ import Components from "./components/page"
 import AboutUs from "./components/AboutUs"
 import Service1 from "./Services/Service1"
 import ServiceGallery from "./Services/ServiceGallery"
+import ScrollToTop from "./components/ScrollToTop"
+import MainService from "./Services/page"
+import Porfolio from "./components/Porfolio"
+import QuoteRequest from "./components/QuoteRequest"
 export default function Home() {
   return (
     <>
@@ -15,8 +19,14 @@ export default function Home() {
       <Components />
     </div>
     <AboutUs/>
-    <Service1 />
-    <ServiceGallery />
+    
+    <MainService />
+      <Porfolio  />
+    <ScrollToTop/>
+    <QuoteRequest />
+
+
+
 
     </>
   )
