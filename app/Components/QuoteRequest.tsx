@@ -1,8 +1,25 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
+import React, { useState } from 'react'
 import { LiaBuildingSolid } from "react-icons/lia";
 
 const QuoteRequest = () => {
+
+
+  const [selected, setSelected] = useState('none');
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const options = [
+    { value: 'Commercial', label: 'Commercial' },
+    { value: 'Residential', label: 'Residential' },
+    { value: 'Individual', label: 'Individual' },
+    { value: 'Others', label: 'Others' },
+  ];
+
+  // Filter options based on search term
+  const filteredOptions = options.filter((option) =>
+    option.label.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className='bg-blue-600'>
 
@@ -55,7 +72,7 @@ const QuoteRequest = () => {
 
 
 
-        {/* form */}
+        
 
         <form action="" className=' p-10 space-y-4 flex flex-col items-center '>
                 <div className='flex space-x-8 '>
@@ -66,12 +83,12 @@ const QuoteRequest = () => {
                 </div>
                 <div className='flex space-x-8 '>
 
-            <select aria-label='Select' value='none' className='rounded-xl p-2 w-96 focus:outline-none' >
+            <select aria-label='Select' value='none' className='rounded-xl  p-2 w-96 focus:outline-none' >
 
-                <option value="Commercial" className='hover:bg-yellow-400 duration-300 ease-in-out rounded-xl'>Commercial </option>
-                <option value="Residential" className='hover:bg-yellow-400 duration-300 ease-in-out rounded-xl'> Residential</option>
-                <option value="Individual" className='hover:bg-yellow-400 duration-300 ease-in-out rounded-xl'>Individual</option>
-                <option value="Others" className='hover:bg-yellow-400 duration-300 ease-in-out rounded-xl'>Others</option>
+                <option value="Commercial" >Commercial </option>
+                <option value="Residential" > Residential</option>
+                <option value="Individual" >Individual</option>
+                <option value="Others" >Others</option>
             </select>
             
             <input type="Date" placeholder='Select Date'  className='rounded-xl p-2 w-96 focus:outline-none'/>
