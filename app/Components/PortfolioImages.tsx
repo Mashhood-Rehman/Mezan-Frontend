@@ -105,12 +105,12 @@ const PortfolioImages = () =>
     {
       setSelectedTab(tab);
       setIsFading(false);
-    }, 300); 
+    }, 300); // Add delay for smooth transition
   };
 
   return (
     <div className="p-4">
-      <div className="flex items-center justify-center space-x-4 mb-8">
+      <div className="lg:flex items-center justify-center grid grid-cols-2 grid-rows-2 gap-4 lg:space-x-4 mb-8">
         {["All", "Carpentry Work", "Furniture Repair", "Plumbing Work", "Wooden Racks"].map((tab) => (
           <button
             key={tab}

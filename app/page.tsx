@@ -21,7 +21,7 @@ export default function Home() {
     <AboutUs/>
     
     <MainService />
-      <Porfolio  />
+      <Porfolio  /> 
     <ScrollToTop/>
     <QuoteRequest />
 

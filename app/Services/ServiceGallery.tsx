@@ -103,9 +103,9 @@ const ServiceGallery = () => {
 <div className='block md:hidden bg-gray-300 p-4 rounded-t-[120%]'>
 
 
-<Swiper navigation={true} modules={[Navigation]} className="mySwiper flex items-center justify-center">
+<Swiper navigation={true} modules={[Navigation]} className="mySwiper ">
         <SwiperSlide >
-          <div className="h-40 w-40  md:h-20 md:w-20 bg-white hover:bg-[url('/about-us-02.jpg')]  hover:scale-110 bg-cover bg-center  duration-500 hover:bg-blend-darken hover:bg-blue-300    ease-in-out flex hover:text-white items-center justify-center rounded-2xl">
+          <div className="h-40 w-40  md:h-20 md:w-20 bg-white hover:bg-[url('/about-us-02.jpg')]  hover:scale-110 bg-cover bg-center  duration-500 hover:bg-blend-darken hover:bg-blue-300    ease-in-out  hover:text-white  rounded-2xl">
             <Icon icon="fluent-mdl2:repair" className='h-10 w-10       ' />
             <h1>General Plumbing</h1>
             </div>
